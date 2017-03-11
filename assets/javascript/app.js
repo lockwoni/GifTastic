@@ -32,7 +32,7 @@ function displayImages() {
     console.log("click!");
     var animalTopic = $(this).attr("data-name");
     // Constructing a URL to search Giphy for the name of the animal in the button
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animalTopic + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalTopic + "&api_key=dc6zaTOxFJmzC&limit=10";
     // Performing an AJAX GET request
     $.ajax({
       url: queryURL,
